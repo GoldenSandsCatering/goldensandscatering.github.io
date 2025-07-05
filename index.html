@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Golden Sands Catering</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="logo.jpg" alt="Golden Sands Catering Logo" class="logo">
+        <h1>Golden Sands Catering</h1>
+    </header>
+
+    <main>
+        <section class="menu">
+            <h2>Меню</h2>
+            <div class="menu-item">
+                <span>Брускетта с лососем</span>
+                <span>27 AED</span>
+                <button onclick="addToCart('Брускетта с лососем', 27)">Добавить</button>
+            </div>
+            <div class="menu-item">
+                <span>Брускетта с ростбифом</span>
+                <span>30 AED</span>
+                <button onclick="addToCart('Брускетта с ростбифом', 30)">Добавить</button>
+            </div>
+        </section>
+
+        <section class="cart" id="cart">
+            <h2>Корзина</h2>
+            <ul id="cart-items"></ul>
+            <p>Итого: <span id="total">0</span> AED</p>
+            <form onsubmit="submitOrder(); return false;">
+                <input type="tel" id="phone" placeholder="Номер телефона" required>
+                <button type="submit">Оформить заказ</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Golden Sands Catering</p>
+    </footer>
+
+    <script>
+        let cart = [];
+
+        function addToCart(name, price) {
+            cart.push({name, price});
+            updateCart();
+        }
+
+        function updateCart() {
+            const list = document.getElementById('cart-items');
+            list.innerHTML = '';
+            let total = 0;
+            cart.forEach((item, index) => {
+                total += item.price;
+                const li = document.createElement('li');
+                li.textContent = `${item.name} - ${item.price} AED`;
+                const btn = document.createElement('button');
+                btn.textContent = "Удалить";
+                btn.onclick = () => { cart.splice(index, 1); updateCart(); };
+                li.appendChild(btn);
+                list.appendChild(li);
+            });
+            document.getElementById('total').textContent = total;
+        }
+
+        function submitOrder() {
+            const phone = document.getElementById('phone').value;
+            alert(`Заказ оформлен! Телефон: ${phone}`);
+            cart = [];
+            updateCart();
+        }
+    </script>
+</body>
+</html>
