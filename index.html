@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Golden Sands Catering</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">Golden Sands</div>
+        <nav>
+            <button onclick="setLanguage('en')">EN</button>
+            <button onclick="setLanguage('ru')">RU</button>
+            <button onclick="setLanguage('ar')">AR</button>
+            <a href="cart.html" class="cart-btn">🛒 <span id="cart-count">0</span></a>
+        </nav>
+    </header>
+
+    <main>
+        <h1 data-i18n="welcome">Welcome to Golden Sands Catering</h1>
+        <div class="menu">
+            <div class="item">
+                <h3 data-i18n="dish1">Bruschetta with salmon</h3>
+                <p>27 AED</p>
+                <button onclick="addToCart('Bruschetta with salmon', 27)">Add</button>
+            </div>
+            <div class="item">
+                <h3 data-i18n="dish2">Bruschetta with shrimp</h3>
+                <p>27 AED</p>
+                <button onclick="addToCart('Bruschetta with shrimp', 27)">Add</button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
