@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Golden Sands Catering — Меню</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="logo.jpg" alt="Golden Sands Logo" class="logo">
+        <h1>Golden Sands Catering</h1>
+        <a href="cart.html" class="cart-link">Перейти в корзину 🛒</a>
+    </header>
+    <main>
+        <section class="menu"><h2>Canape</h2>
+        <div class="menu-item">
+            <span>Канапе с креветкой</span>
+            <span>35 AED</span>
+            <div class="qty-controls">
+                <button onclick="removeFromCart('Can_0')">−</button>
+                <span id="qty-Can_0">0</span>
+                <button onclick="addToCart('Can_0', 'Канапе с креветкой', 35)">+</button>
+            </div>
+        </div>
+        <div class="menu-item">
+            <span>Канапе с тунцом</span>
+            <span>32 AED</span>
+            <div class="qty-controls">
+                <button onclick="removeFromCart('Can_1')">−</button>
+                <span id="qty-Can_1">0</span>
+                <button onclick="addToCart('Can_1', 'Канапе с тунцом', 32)">+</button>
+            </div>
+        </div>
+        <div class="menu-item">
+            <span>Канапе с ростбифом</span>
+            <span>30 AED</span>
+            <div class="qty-controls">
+                <button onclick="removeFromCart('Can_2')">−</button>
+                <span id="qty-Can_2">0</span>
+                <button onclick="addToCart('Can_2', 'Канапе с ростбифом', 30)">+</button>
+            </div>
+        </div>
+        <div class="menu-item">
+            <span>Канапе с лососем</span>
+            <span>33 AED</span>
+            <div class="qty-controls">
+                <button onclick="removeFromCart('Can_3')">−</button>
+                <span id="qty-Can_3">0</span>
+                <button onclick="addToCart('Can_3', 'Канапе с лососем', 33)">+</button>
+            </div>
+        </div>
+        <div class="menu-item">
+            <span>Канапе с моцареллой и томатами</span>
+            <span>27 AED</span>
+            <div class="qty-controls">
+                <button onclick="removeFromCart('Can_4')">−</button>
+                <span id="qty-Can_4">0</span>
+                <button onclick="addToCart('Can_4', 'Канапе с моцареллой и томатами', 27)">+</button>
+            </div>
+        </div></section>
+<section class="menu"><h2>Bruschettas & Tapas</h2>
+        <div class="menu-item">
+            <span>Брускетта с лососем</span>
+            <span>27 AED</span>
+            <div class="qty-controls">
+                <button onclick="removeFromCart('Bru_0')">−</button>
+                <span id="qty-Bru_0">0</span>
+                <button onclick="addToCart('Bru_0', 'Брускетта с лососем', 27)">+</button>
+            </div>
+        </div>
+        <div class="menu-item">
+            <span>Брускетта с ростбифом</span>
+            <span>30 AED</span>
+            <div class="qty-controls">
+                <button onclick="removeFromCart('Bru_1')">−</button>
+                <span id="qty-Bru_1">0</span>
+                <button onclick="addToCart('Bru_1', 'Брускетта с ростбифом', 30)">+</button>
+            </div>
+        </div>
+        <div class="menu-item">
+            <span>Брускетта с креветкой</span>
+            <span>27 AED</span>
+            <div class="qty-controls">
+                <button onclick="removeFromCart('Bru_2')">−</button>
+                <span id="qty-Bru_2">0</span>
+                <button onclick="addToCart('Bru_2', 'Брускетта с креветкой', 27)">+</button>
+            </div>
+        </div>
+        <div class="menu-item">
+            <span>Брускетта с томатами и фетой</span>
+            <span>25 AED</span>
+            <div class="qty-controls">
+                <button onclick="removeFromCart('Bru_3')">−</button>
+                <span id="qty-Bru_3">0</span>
+                <button onclick="addToCart('Bru_3', 'Брускетта с томатами и фетой', 25)">+</button>
+            </div>
+        </div>
+        <div class="menu-item">
+            <span>Брускетта инжир/бри/мёд</span>
+            <span>30 AED</span>
+            <div class="qty-controls">
+                <button onclick="removeFromCart('Bru_4')">−</button>
+                <span id="qty-Bru_4">0</span>
+                <button onclick="addToCart('Bru_4', 'Брускетта инжир/бри/мёд', 30)">+</button>
+            </div>
+        </div></section>
+<section class="menu"><h2>Snacks</h2>
+        <div class="menu-item">
+            <span>Мини крокеты</span>
+            <span>25 AED</span>
+            <div class="qty-controls">
+                <button onclick="removeFromCart('Sna_0')">−</button>
+                <span id="qty-Sna_0">0</span>
+                <button onclick="addToCart('Sna_0', 'Мини крокеты', 25)">+</button>
+            </div>
+        </div>
+        <div class="menu-item">
+            <span>Мини чебуреки</span>
+            <span>20 AED</span>
+            <div class="qty-controls">
+                <button onclick="removeFromCart('Sna_1')">−</button>
+                <span id="qty-Sna_1">0</span>
+                <button onclick="addToCart('Sna_1', 'Мини чебуреки', 20)">+</button>
+            </div>
+        </div>
+        <div class="menu-item">
+            <span>Мини пирожки с мясом</span>
+            <span>22 AED</span>
+            <div class="qty-controls">
+                <button onclick="removeFromCart('Sna_2')">−</button>
+                <span id="qty-Sna_2">0</span>
+                <button onclick="addToCart('Sna_2', 'Мини пирожки с мясом', 22)">+</button>
+            </div>
+        </div>
+        <div class="menu-item">
+            <span>Мини самса</span>
+            <span>24 AED</span>
+            <div class="qty-controls">
+                <button onclick="removeFromCart('Sna_3')">−</button>
+                <span id="qty-Sna_3">0</span>
+                <button onclick="addToCart('Sna_3', 'Мини самса', 24)">+</button>
+            </div>
+        </div>
+        <div class="menu-item">
+            <span>Мини хот-доги</span>
+            <span>28 AED</span>
+            <div class="qty-controls">
+                <button onclick="removeFromCart('Sna_4')">−</button>
+                <span id="qty-Sna_4">0</span>
+                <button onclick="addToCart('Sna_4', 'Мини хот-доги', 28)">+</button>
+            </div>
+        </div></section>
+<section class="menu"><h2>Mini Salads</h2>
+        <div class="menu-item">
+            <span>Салат Цезарь</span>
+            <span>35 AED</span>
+            <div class="qty-controls">
+                <button onclick="removeFromCart('Min_0')">−</button>
+                <span id="qty-Min_0">0</span>
+                <button onclick="addToCart('Min_0', 'Салат Цезарь', 35)">+</button>
+            </div>
+        </div>
+        <div class="menu-item">
+            <span>Салат с тунцом</span>
+            <span>33 AED</span>
+            <div class="qty-controls">
+                <button onclick="removeFromCart('Min_1')">−</button>
+                <span id="qty-Min_1">0</span>
+                <button onclick="addToCart('Min_1', 'Салат с тунцом', 33)">+</button>
+            </div>
+        </div>
+        <div class="menu-item">
+            <span>Салат с курицей</span>
+            <span>30 AED</span>
+            <div class="qty-controls">
+                <button onclick="removeFromCart('Min_2')">−</button>
+                <span id="qty-Min_2">0</span>
+                <button onclick="addToCart('Min_2', 'Салат с курицей', 30)">+</button>
+            </div>
+        </div>
+        <div class="menu-item">
+            <span>Греческий салат</span>
+            <span>29 AED</span>
+            <div class="qty-controls">
+                <button onclick="removeFromCart('Min_3')">−</button>
+                <span id="qty-Min_3">0</span>
+                <button onclick="addToCart('Min_3', 'Греческий салат', 29)">+</button>
+            </div>
+        </div></section>
+<section class="menu"><h2>Hot Meals / Grills</h2>
+        <div class="menu-item">
+            <span>Мини-кебаб</span>
+            <span>40 AED</span>
+            <div class="qty-controls">
+                <button onclick="removeFromCart('Hot_0')">−</button>
+                <span id="qty-Hot_0">0</span>
+                <button onclick="addToCart('Hot_0', 'Мини-кебаб', 40)">+</button>
+            </div>
+        </div>
+        <div class="menu-item">
+            <span>Шашлычок из курицы</span>
+            <span>38 AED</span>
+            <div class="qty-controls">
+                <button onclick="removeFromCart('Hot_1')">−</button>
+                <span id="qty-Hot_1">0</span>
+                <button onclick="addToCart('Hot_1', 'Шашлычок из курицы', 38)">+</button>
+            </div>
+        </div>
+        <div class="menu-item">
+            <span>Шашлычок из говядины</span>
+            <span>42 AED</span>
+            <div class="qty-controls">
+                <button onclick="removeFromCart('Hot_2')">−</button>
+                <span id="qty-Hot_2">0</span>
+                <button onclick="addToCart('Hot_2', 'Шашлычок из говядины', 42)">+</button>
+            </div>
+        </div>
+        <div class="menu-item">
+            <span>Куриные крылышки</span>
+            <span>36 AED</span>
+            <div class="qty-controls">
+                <button onclick="removeFromCart('Hot_3')">−</button>
+                <span id="qty-Hot_3">0</span>
+                <button onclick="addToCart('Hot_3', 'Куриные крылышки', 36)">+</button>
+            </div>
+        </div></section>
+<section class="menu"><h2>Side Dishes</h2>
+        <div class="menu-item">
+            <span>Картофель по-деревенски</span>
+            <span>25 AED</span>
+            <div class="qty-controls">
+                <button onclick="removeFromCart('Sid_0')">−</button>
+                <span id="qty-Sid_0">0</span>
+                <button onclick="addToCart('Sid_0', 'Картофель по-деревенски', 25)">+</button>
+            </div>
+        </div>
+        <div class="menu-item">
+            <span>Мини-картофель</span>
+            <span>24 AED</span>
+            <div class="qty-controls">
+                <button onclick="removeFromCart('Sid_1')">−</button>
+                <span id="qty-Sid_1">0</span>
+                <button onclick="addToCart('Sid_1', 'Мини-картофель', 24)">+</button>
+            </div>
+        </div>
+        <div class="menu-item">
+            <span>Овощи гриль</span>
+            <span>26 AED</span>
+            <div class="qty-controls">
+                <button onclick="removeFromCart('Sid_2')">−</button>
+                <span id="qty-Sid_2">0</span>
+                <button onclick="addToCart('Sid_2', 'Овощи гриль', 26)">+</button>
+            </div>
+        </div></section>
+<section class="menu"><h2>Sushi / Rolls / Sashimi</h2>
+        <div class="menu-item">
+            <span>Филадельфия ролл</span>
+            <span>38 AED</span>
+            <div class="qty-controls">
+                <button onclick="removeFromCart('Sus_0')">−</button>
+                <span id="qty-Sus_0">0</span>
+                <button onclick="addToCart('Sus_0', 'Филадельфия ролл', 38)">+</button>
+            </div>
+        </div>
+        <div class="menu-item">
+            <span>Калифорния ролл</span>
+            <span>36 AED</span>
+            <div class="qty-controls">
+                <button onclick="removeFromCart('Sus_1')">−</button>
+                <span id="qty-Sus_1">0</span>
+                <button onclick="addToCart('Sus_1', 'Калифорния ролл', 36)">+</button>
+            </div>
+        </div>
+        <div class="menu-item">
+            <span>Суши с тунцом</span>
+            <span>32 AED</span>
+            <div class="qty-controls">
+                <button onclick="removeFromCart('Sus_2')">−</button>
+                <span id="qty-Sus_2">0</span>
+                <button onclick="addToCart('Sus_2', 'Суши с тунцом', 32)">+</button>
+            </div>
+        </div>
+        <div class="menu-item">
+            <span>Сашими с лососем</span>
+            <span>40 AED</span>
+            <div class="qty-controls">
+                <button onclick="removeFromCart('Sus_3')">−</button>
+                <span id="qty-Sus_3">0</span>
+                <button onclick="addToCart('Sus_3', 'Сашими с лососем', 40)">+</button>
+            </div>
+        </div></section>
+<section class="menu"><h2>Desserts</h2>
+        <div class="menu-item">
+            <span>Мини-чизкейк</span>
+            <span>28 AED</span>
+            <div class="qty-controls">
+                <button onclick="removeFromCart('Des_0')">−</button>
+                <span id="qty-Des_0">0</span>
+                <button onclick="addToCart('Des_0', 'Мини-чизкейк', 28)">+</button>
+            </div>
+        </div>
+        <div class="menu-item">
+            <span>Эклер</span>
+            <span>26 AED</span>
+            <div class="qty-controls">
+                <button onclick="removeFromCart('Des_1')">−</button>
+                <span id="qty-Des_1">0</span>
+                <button onclick="addToCart('Des_1', 'Эклер', 26)">+</button>
+            </div>
+        </div>
+        <div class="menu-item">
+            <span>Тарталетка с ягодами</span>
+            <span>30 AED</span>
+            <div class="qty-controls">
+                <button onclick="removeFromCart('Des_2')">−</button>
+                <span id="qty-Des_2">0</span>
+                <button onclick="addToCart('Des_2', 'Тарталетка с ягодами', 30)">+</button>
+            </div>
+        </div>
+        <div class="menu-item">
+            <span>Макаронс</span>
+            <span>35 AED</span>
+            <div class="qty-controls">
+                <button onclick="removeFromCart('Des_3')">−</button>
+                <span id="qty-Des_3">0</span>
+                <button onclick="addToCart('Des_3', 'Макаронс', 35)">+</button>
+            </div>
+        </div></section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Golden Sands Catering</p>
+    </footer>
+    
+<script>
+    let cart = JSON.parse(localStorage.getItem('cart')) || {};
+
+    function updateQuantityDisplay(id) {
+        const quantitySpan = document.getElementById(`qty-${id}`);
+        quantitySpan.textContent = cart[id] ? cart[id].qty : 0;
+    }
+
+    function addToCart(id, name, price) {
+        if (!cart[id]) {
+            cart[id] = { name: name, price: price, qty: 1 };
+        } else {
+            cart[id].qty += 1;
+        }
+        localStorage.setItem('cart', JSON.stringify(cart));
+        updateQuantityDisplay(id);
+    }
+
+    function removeFromCart(id) {
+        if (cart[id]) {
+            cart[id].qty -= 1;
+            if (cart[id].qty <= 0) {
+                delete cart[id];
+            }
+            localStorage.setItem('cart', JSON.stringify(cart));
+            updateQuantityDisplay(id);
+        }
+    }
+
+    window.onload = function() {
+        Object.keys(cart).forEach(updateQuantityDisplay);
+    };
+</script>
+
+</body>
+</html>
